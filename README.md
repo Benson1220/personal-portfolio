@@ -24,6 +24,12 @@
 - GitHub：保存與展示原始碼
 - GitHub Pages：發布靜態網站
 - JavaScript：處理專案學習心得的展開與收起互動
+- HTML：建立網頁內容與結構
+- CSS：設定外觀、Grid 排版與響應式樣式
+- JavaScript：處理專案學習心得的展開與收起互動
+- Git：管理版本紀錄
+- GitHub：保存與展示原始碼
+- GitHub Pages：發布靜態網站
 
 ## 資料夾結構
 
@@ -60,6 +66,10 @@
 - 確認心得按鈕可用空白鍵展開與收起
 - 在專案卡片提供線上展示與原始碼連結
 - 新增 GitHub Pages 部署與 JavaScript 互動的學習紀錄
+- 個人作品集網站 V1 已上線，持續改善中
+- 專案卡片列出實際使用的 HTML、CSS、JavaScript、Git 與 GitHub Pages
+- 技術能力區塊補上 JavaScript 互動的實作紀錄
+- 新增「版本管理與部署」技能卡片，整理實際操作經驗
 網站持續開發與更新中。
 
 ## 後續規劃
