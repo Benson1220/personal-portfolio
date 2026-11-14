@@ -417,3 +417,56 @@ footer {
 .skip-link:focus {
   transform: translateY(0);
 }
+/* 列印或另存 PDF 時使用 */
+@media print {
+  body {
+    color: #000000;
+    background: #ffffff;
+    font-size: 12pt;
+  }
+
+  /* 列印時省略導覽與互動控制 */
+  header,
+  footer,
+  .skip-link,
+  .button {
+    display: none;
+  }
+
+  main {
+    max-width: none;
+    padding: 0;
+  }
+
+  /* 首頁改為單欄，減少留白 */
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    padding: 0 0 24px;
+  }
+
+  .hero h1 {
+    font-size: 24pt;
+  }
+
+  /* 各種卡片改用白底 */
+  .panel,
+  .hero-summary,
+  .project-card,
+  .skill-card,
+  .contact-card {
+    background: #ffffff;
+    border-color: #999999;
+  }
+
+  .panel {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  h2,
+  h3,
+  h4 {
+    break-after: avoid;
+  }
+}
