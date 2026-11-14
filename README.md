@@ -1,6 +1,6 @@
 # Benson｜個人作品集
 
-使用 HTML 與 CSS 建立的個人作品集網站，
+使用 HTML、CSS 與 JavaScript 建立的個人作品集網站，
 用來整理個人背景、專案作品與學習紀錄，並持續累積網站開發經驗。
 
 ## 線上網站
@@ -23,6 +23,7 @@
 - Git：管理版本紀錄
 - GitHub：保存與展示原始碼
 - GitHub Pages：發布靜態網站
+- JavaScript：處理專案學習心得的展開與收起互動
 
 ## 資料夾結構
 
@@ -30,6 +31,7 @@
 - assets/css/style.css：網站樣式與響應式設定
 - README.md：專案說明
 - .gitignore：排除系統檔與本機備份檔
+- assets/js/main.js：專案學習心得的互動程式
 
 ## 本機瀏覽方式
 
@@ -45,14 +47,16 @@
 - 完成窄螢幕排版檢查
 - 使用 Git 管理版本
 - 部署至 GitHub Pages
-
+- 使用 JavaScript 實作學習心得的展開與收起
+- 同步更新按鈕文字與 aria-expanded 狀態
+- 完成本機與 GitHub Pages 線上互動檢查
 網站持續開發與更新中。
 
 ## 後續規劃
 
 - 持續補充 Python 學習內容與實作專案
 - 加入專案詳情與原始碼連結
-- 依照實際需求學習並加入 JavaScript 互動
+- 持續練習 JavaScript，依實際需求擴充互動功能
 
 ## 設計參考
 
