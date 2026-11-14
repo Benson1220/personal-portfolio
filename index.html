@@ -7,6 +7,7 @@
     <meta name="description" content="資訊管理研究生的個人作品集與學習紀錄">
     <title>個人作品集</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
 </head>
 
 <body>
@@ -156,6 +157,17 @@
                     </p>
 
                     <p class="muted">GitHub 連結：待建立儲存庫後加入。</p>
+                    <button id="project-toggle" class="button" type="button" aria-expanded="false"
+                        aria-controls="project-notes">
+                        展開學習心得
+                    </button>
+
+                    <div id="project-notes" hidden>
+                        <p>
+                            這個專案讓我開始理解 HTML 結構、CSS 排版，
+                            以及使用 Git 和 GitHub Pages 更新網站的流程。
+                        </p>
+                    </div>
                 </article>
             </div>
         </section>
