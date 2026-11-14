@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Benson 個人作品集網站的開發目的、實作過程與學習成果。">
+    <title>個人作品集網站｜專案詳情｜Benson</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">跳到主要內容</a>
+
+    <header>
+        <nav aria-label="專案頁導覽">
+            <a class="brand" href="../index.html">Benson｜個人作品集</a>
+            <a href="../index.html#projects">返回作品列表</a>
+        </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <section class="hero" aria-labelledby="project-title">
+            <div class="hero-copy">
+                <p class="eyebrow">PROJECT DETAILS</p>
+                <h1 id="project-title">個人作品集網站</h1>
+                <p class="intro">
+                    從 HTML 與 CSS 開始，逐步加入 JavaScript，
+                    並透過 GitHub Pages 發布的個人網站。
+                </p>
+            </div>
+        </section>
+
+        <section class="panel" aria-labelledby="purpose-title">
+            <h2 id="purpose-title">專案目的</h2>
+            <p>
+                建立可以長期維護的個人作品集，
+                整理個人背景、技術學習與專案成果，
+                為未來求職逐步累積實作紀錄。
+            </p>
+            <p>
+                第一階段使用 HTML、CSS 與 JavaScript，
+                從基本網頁結構開始學習，再逐步改善排版與互動。
+            </p>
+        </section>
+
+        <section class="panel" aria-labelledby="features-title">
+            <h2 id="features-title">已完成內容</h2>
+            <ul class="skill-list">
+                <li>建立個人介紹、學經歷、技能、作品與聯絡區塊。</li>
+                <li>使用 CSS Grid 與媒體查詢調整桌面和窄螢幕排版。</li>
+                <li>使用 JavaScript 實作學習心得的展開與收起。</li>
+                <li>加入跳到主要內容連結與鍵盤焦點樣式。</li>
+                <li>提供列印專用樣式。</li>
+                <li>使用 Git 管理版本，並透過 GitHub Pages 發布。</li>
+            </ul>
+        </section>
+
+        <section class="panel" aria-labelledby="challenges-title">
+            <h2 id="challenges-title">問題與解法</h2>
+
+            <article class="entry">
+                <h3>拆分 CSS 後，頁面失去樣式</h3>
+                <p>
+                    檢查樣式檔是否有內容並完成儲存，
+                    同時確認 HTML 的連結路徑與實際資料夾位置一致。
+                </p>
+            </article>
+
+            <article class="entry">
+                <h3>修改連結後，顯示文字沒有跟著更新</h3>
+                <p>
+                    理解 href 決定連結目的地，
+                    標籤內的文字則決定畫面顯示內容，兩者需要分別修改。
+                </p>
+            </article>
+
+            <article class="entry">
+                <h3>本機修改沒有立即出現在線上網站</h3>
+                <p>
+                    區分本機檔案與線上版本，
+                    完成本機測試、提交及上傳後，
+                    再等待 GitHub Pages 部署並檢查結果。
+                </p>
+            </article>
+        </section>
+
+        <section class="panel" aria-labelledby="resources-title">
+            <h2 id="resources-title">查看成果與程式碼</h2>
+            <p>
+                <a href="../index.html">瀏覽作品集首頁 →</a>
+            </p>
+            <p>
+                <a href="https://github.com/Benson1220/personal-portfolio">
+                    查看 GitHub 原始碼 →
+                </a>
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
