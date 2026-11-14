@@ -470,3 +470,179 @@ footer {
     break-after: avoid;
   }
 }
+/* 漫畫首頁：獨立於原本的 .hero */
+.hero-illustrated {
+  position: relative;
+  container-type: inline-size;
+  margin: 32px 0 48px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #292019;
+}
+
+.hero-illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 深色漸層讓文字清楚，圖片本身不會改變 */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgb(25 18 12 / 65%) 0%,
+    rgb(25 18 12 / 35%) 25%,
+    transparent 43%,
+    transparent 70%,
+    rgb(25 18 12 / 75%) 100%
+  );
+}
+
+.hero-headline {
+  position: absolute;
+  top: 2%;
+  left: 4%;
+  right: 4%;
+  display: flex;
+  justify-content: center;
+  gap: 0.15em;
+  margin: 0;
+  color: #fff7e8;
+  font-family: Arial, sans-serif;
+  font-size: clamp(1.75rem, 9cqw, 6.5rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.2;
+  letter-spacing: -0.06em;
+}
+
+.headline-mask {
+  overflow: hidden;
+  padding: 0 0.08em 0.1em 0;
+}
+
+.headline-word {
+  display: inline-block;
+  animation: headline-enter 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.headline-mask:first-child .headline-word,
+.headline-mask:last-child .headline-word {
+  color: #edfa37;
+}
+
+.headline-mask:nth-child(2) .headline-word {
+  animation-delay: 0.16s;
+}
+
+.headline-mask:nth-child(3) .headline-word {
+  animation-delay: 0.32s;
+}
+
+@keyframes headline-enter {
+  from {
+    opacity: 0;
+    transform: translateY(110%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 圖片下方的簡介與作品入口 */
+.hero-caption {
+  position: absolute;
+  bottom: 5%;
+  left: 4%;
+  right: 4%;
+  color: #fff7e8;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.hero-caption p {
+  margin-bottom: 8px;
+}
+
+.hero-motto {
+  font-size: clamp(1.1rem, 2.8cqw, 1.75rem);
+  font-style: italic;
+}
+
+.hero-caption .button {
+  margin-top: 8px;
+  border-color: #fff7e8;
+}
+
+/* 手機版：文字與圖片上下排列，保留完整人物 */
+@media (max-width: 600px) {
+  .hero-illustrated {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+  }
+
+  .hero-overlay {
+    display: contents;
+  }
+
+  .hero-headline {
+    position: static;
+    order: -1;
+    flex-wrap: wrap;
+    padding: 24px 16px;
+  }
+
+  .hero-caption {
+    position: static;
+    padding: 24px 16px;
+  }
+}
+
+/* 尊重使用者的減少動態設定 */
+@media (prefers-reduced-motion: reduce) {
+  .headline-word {
+    animation: none;
+  }
+}
+
+/* 延續原本的列印功能 */
+@media print {
+  .hero-illustrated {
+    margin: 0 0 24px;
+    background: #ffffff;
+    overflow: visible;
+  }
+
+  .hero-illustration {
+    display: none;
+  }
+
+  .hero-overlay {
+    position: static;
+    display: block;
+    background: none;
+  }
+
+  .hero-headline {
+    position: static;
+    padding: 0;
+    font-size: 24pt;
+    color: #000000;
+  }
+
+  .hero-headline .headline-word {
+    color: #000000;
+    animation: none;
+  }
+
+  .hero-caption {
+    position: static;
+    padding: 16px 0 0;
+    color: #000000;
+  }
+}

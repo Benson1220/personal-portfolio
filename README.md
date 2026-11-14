@@ -41,6 +41,7 @@
 - assets/js/main.js：專案學習心得的互動程式
 - assets/images/favicon.svg：網站分頁圖示
 - projects/portfolio.html：個人作品集網站的專案詳情頁
+- assets/images/hero-study-comic.png：首頁漫畫書房分身圖片
 
 ## 本機瀏覽方式
 
@@ -88,6 +89,9 @@ Mac 按 Command 搭配 P；Windows 按 Ctrl 搭配 P。
 - 建立個人作品集網站的獨立專案詳情頁
 - 從首頁作品卡片連到詳情頁，並提供返回作品列表的連結
 - 完成詳情頁的本機排版、窄視窗與來回導覽測試
+- 首頁加入以本人照片為參考、由 AI 輔助製作的漫畫書房分身圖片
+- 使用 CSS 製作三段式大標題進場動畫，人物維持靜態
+- 完成首頁窄螢幕、鍵盤操作與列印預覽檢查
 網站持續開發與更新中。
 ## 檢查與驗證
 
