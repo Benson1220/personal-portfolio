@@ -1,0 +1,6 @@
+# macOS 自動產生的資料夾資訊
+.DS_Store
+
+# 先前保留的備份檔
+/assets-backup
+/assets/css/style-backup.css
