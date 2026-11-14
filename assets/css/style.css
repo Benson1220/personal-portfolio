@@ -310,7 +310,17 @@ main {
   padding-top: 16px;
   border-top: 1px solid #d5d5d5;
 }
+/* 作品連結：橫向排列，空間不足時換行 */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-bottom: 16px;
+}
 
+.project-links a {
+  padding: 8px 0;
+}
 #project-notes p:last-child {
   margin-bottom: 0;
 }
@@ -439,7 +449,10 @@ footer {
     grid-template-columns: minmax(0, 1fr);
   }
 }
-
+/* 只有一張作品卡片時，填滿整列 */
+.project-grid > .project-card:only-child {
+  grid-column: 1 / -1;
+}
 @media (max-width: 600px) {
   nav {
     align-items: flex-start;
