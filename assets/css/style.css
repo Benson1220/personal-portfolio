@@ -16,7 +16,9 @@ a {
   text-underline-offset: 4px;
 }
 
-a:focus-visible {
+/* 鍵盤選取連結或按鈕時，顯示外框 */
+a:focus-visible,
+button:focus-visible {
   outline: 3px solid #171717;
   outline-offset: 5px;
 }
@@ -106,6 +108,8 @@ main {
 }
 
 .button {
+  font: inherit;
+  cursor: pointer;
   display: inline-block;
   margin-top: 16px;
   padding: 10px 20px;
@@ -168,8 +172,8 @@ main {
 }
 
 .entry p:last-child,
-.project-card > p:last-child,
-.skill-card > p:last-child,
+.project-card>p:last-child,
+.skill-card>p:last-child,
 .experience-item p:last-child {
   margin-bottom: 0;
 }
@@ -221,7 +225,7 @@ main {
   margin: 0;
 }
 
-.summary-list > div {
+.summary-list>div {
   padding: 16px 0;
   border-top: 1px solid #d5d5d5;
 }
@@ -247,7 +251,7 @@ main {
   border-left: 2px solid #d5d5d5;
 }
 
-.experience-item + .experience-item {
+.experience-item+.experience-item {
   margin-top: 24px;
 }
 
@@ -277,7 +281,7 @@ main {
   padding-left: 20px;
 }
 
-.skill-list li + li {
+.skill-list li+li {
   margin-top: 8px;
 }
 
@@ -298,6 +302,16 @@ main {
 .project-progress {
   padding-top: 16px;
   border-top: 1px solid #d5d5d5;
+}
+/* 展開後的專案學習心得 */
+#project-notes {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #d5d5d5;
+}
+
+#project-notes p:last-child {
+  margin-bottom: 0;
 }
 
 /* 8. 學習紀錄 */
@@ -386,6 +400,7 @@ footer {
     padding: 24px;
   }
 }
+
 /* 鍵盤導覽：取得焦點時顯示 */
 .skip-link {
   position: absolute;
